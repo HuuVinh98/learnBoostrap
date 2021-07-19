@@ -1,0 +1,386 @@
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+$background: linear-gradient(to bottom, #dd2476, #ff512f);
+header 
+{
+    background:$background;
+    a 
+    {
+        color: white;
+        font-size: 0.9em;
+    }
+    .row 
+    {
+        .col-md-7 
+        {
+            padding:22vmin 1vmin;
+            padding-bottom: 35vmin;
+            button 
+            {
+                border-radius: 30px;
+                font-weight: bold;
+            }
+        }
+    }
+    .container
+    {
+        .col-md-7
+        {
+            h6 
+            {
+                padding: 1vmin;
+            }
+            h1 
+            {
+                padding: 0.1em 0em;
+                font-size: 8vmin;
+                font-weight: bold;
+            }
+            p 
+            {
+                padding: 1vmin 5vmin;
+            }
+        }
+        .col-md-5
+        {
+            padding: 4.2vmin 1vmin;
+            img 
+            {
+                width: 90%;
+                
+            }
+        }
+    }
+    .navbar-brand
+    {
+        padding-left: 8rem;
+    }
+    .nav-item
+    {
+        padding:0.8rem;
+
+        &:last-child
+        {
+            padding-right: 10rem;
+        }
+        &:hover
+        {
+            .nav-link
+            {
+                color: black;
+            }
+        }
+    }
+}
+body {
+    overflow-x: hidden;
+}
+
+
+main 
+{
+    /* section 1 */
+    .section-1 
+    {
+        padding: 20vmin 0vmin;
+        .row 
+        {
+            .col-md-6
+            {
+                &:last-child
+                {
+                    position: relative;
+                    .panel
+                    {
+                        position: absolute;
+                        background-color: white;
+                        border-radius: 3px;
+                        text-align: left;
+                        box-shadow: 0px 25px 42px #00000073;
+                        z-index: 1;
+                        top: 7vmin;
+                        left: -32vmin;
+                        padding:13vmin 5vmin 20vmin 10vmin;
+                        p 
+                        {
+                            opacity: 0.5;
+                        }
+                    }
+                }
+                img 
+                {
+                    opacity: 0.8;
+                    width: 70%;
+                    max-height: 500px;
+                    border-radius: 0.2em;
+                }
+                
+            }
+
+        }
+    }
+    /* section 2 */
+    .section-2 
+    {
+        .cover
+        {
+            width: 100%;
+            height: 55vmin;
+            background-image: url('../image/jump.jpg');
+            background-position: 0rem -1rem;
+            background-size: 100%;
+            position: relative;
+            .content
+            {
+                width: 100%;
+                height: 100%;
+                opacity: 0.7;
+                padding-top: 19vmin;
+                background: rgba($color: #000000, $alpha: 0.7);
+                h1 
+                {
+                    color: white;
+                    font-size: 6vmin;
+                }
+                p 
+                {
+                    font-size: 2vmin;
+                    color: white;
+                }
+            }
+        }
+        .numbers 
+        {
+            margin-top: -15vmin;
+            .rect 
+            {
+                position: relative;
+                background:white;
+                z-index: 1;
+                width: 17rem;
+                height: 12rem;
+                padding-top: 3.5vmin;
+                margin: 1rem;
+                border-radius: 0.5em;
+                box-shadow: 1px 2px 50px 0px rgba(255,0,0,0.349);
+                h1 
+                {
+                    font-size: 5rem;
+                    color: tomato;
+                }
+            }
+        }
+        .purchase
+        {
+            h1 
+            {
+                padding-top: 15vmin;
+                padding-bottom: 0.1em;
+            }
+            p 
+            {
+                font-size: 3vmin;
+                padding-bottom: 10vmin;
+            }
+            
+        }
+        .cards
+            {
+                    
+                .card
+                {
+                    width: 22rem;
+                    margin: 3vmin;
+                    
+                    
+                }
+                div 
+                {
+                    padding: 0;
+                    margin: 0;
+                }
+               .card-body
+               {
+                    .card-text
+                    {
+                        padding: 2.5rem 3rem;
+                    }
+                    .title
+                    {
+                        background:rgba(208,241,241,0.119);
+                        padding: 1.4em 2.5em;
+                        font-size: 2vmin;
+                        width: 100%;
+                    }
+                    .pricing
+                    {
+                        width: 100%;
+                        background:rgba(208,241,241,0.119);
+                        border-top-left-radius: 170px;
+                        border-top-right-radius: 170px;
+                        h1 
+                        {
+                            font-size: 10vmin;
+                            padding: 1em 0.5em;
+                        }
+                    }
+               }
+            }
+    }
+    /* section 3 */
+    .section-3
+    {
+        margin-top: 15vmin;
+        height: 70vmin;
+        background:$background;
+        .row 
+        {
+            .col-md-12
+            {
+                h1 
+                {
+                    padding: 2em 0  0.5em 0;
+                    color:white;
+                    font-size: 6vmin;
+                }
+                p 
+                {
+                    padding: 0 4em;
+                    color:white;
+                    font-size: 3vmin;
+                    padding-bottom: 2em;
+                }
+            }
+        }
+        .desktop,.mobile
+        {
+            background:white;
+            display: inline-block;
+            border-radius: 3em;
+            padding: 2vmin 4.5vmin;
+            margin:1em;
+            h3 
+            {
+                font-size: 4vmin;
+            }
+            p 
+            {
+                font-size: 2vmin;
+            }
+        }
+    }
+
+    /* section 4 */
+    .section-4 
+    {
+        .container{
+            h1 
+            {
+                font-size: 6vmin;
+                padding-top: 14vmin;
+            }
+        }
+        .team
+        {
+            padding: 10vmin 4vmin;
+        }
+        .card
+        {
+            width: 22em;
+            margin-top: 10vmin;
+            .card-img-top
+            {
+                img 
+                {
+                    width: 150px;
+                    height: 150px;
+                    border-radius: 50%;
+                }
+                .card-body
+                    {
+                        .card-title
+                        {
+                            padding: 0.5em;
+                        }
+                        a 
+                        {
+                            font-size: 1.5em;
+                        }
+                    }
+            }
+               
+        }
+       
+        .carousel-item
+        {
+            padding-left: 3rem;
+            .card
+        {
+            width: 22em;
+            margin-top: 10vmin;
+            .card-img-top
+            {
+                img 
+                {
+                    width: 150px;
+                    height: 150px;
+                    border-radius: 50%;
+                }
+                .card-body
+                    {
+                        .card-title
+                        {
+                            padding: 0.5em;
+                        }
+                        a 
+                        {
+                            font-size: 1.5em;
+                        }
+                    }
+            }
+               
+        }
+        }
+    }
+}
+
+footer
+{
+    background:rgba(0,0,0,0.815);
+    padding:14vmin 18vmin;
+    p 
+    {
+        span 
+        {
+            color: #ff512f;
+        }
+    }
+    input 
+    {
+        border:none !important;
+        &::placeholder
+        {
+            color: white !important;
+        }
+    }
+    .input-group
+    {
+        .input-group-text
+        {
+            background:$background;
+        }
+    }
+    .column 
+    {
+         i 
+         {
+             color: #dd2476;
+             padding: 0 0.5em;
+         }
+    }
+}

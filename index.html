@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./scss/style.css">
+    <link rel="stylesheet" href="./scss/mobile.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -15,9 +17,12 @@
     <header>
         <div class="container-fluid p-0">
             <nav class="navbar navbar-expand-lg">
-                <a class="navbar-brand" href="#">Books</a>
+                <a class="navbar-brand" href="#">
+                    <i class="fas fa-book-reader fa-2x mx-3"></i>
+                    Books
+                </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
+                <i class="fas fa-align-right text-light"></i>
                 </button>
               
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -58,16 +63,16 @@
         </div>
         <div class="container text-center">
             <div class="row">
-                <div class="col-md-7 col-sm-12">
+                <div class="col-md-7 col-sm-12 text-white">
                     <h6>AUTHOR: DAILY TUITION</h6>
                     <h1>EXCITING ADVENTURE</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem ad dignissimos ullam deserunt ipsam soluta itaque minus culpa, eaque obcaecati eius id, in eligendi eos voluptates dolorem a quia tempore!</p>
-                    <button class="btn btn-light">
+                    <button class="btn btn-light btn-primary px-5 py-2">
                         By now for $5.99
                     </button>
                 </div>
                 <div class="col-md-5 col-sm-12">
-                    <img src="" alt="">
+                    <img src="./image/book.png" alt="">
                 </div>
                 
             </div>
@@ -81,7 +86,7 @@
                         <div class="panel">
                             <div>
                                 <div>
-                                    <img src="" alt="">
+                                    <img src="./image/mountain_climbing.jpg" alt="">
                                 </div>
                             </div>
                         </div>
@@ -97,7 +102,7 @@
             </div>
         </section>
         <section class="section-2 container-fluid">
-            <div>
+            <div class="cover">
                 <div class="content text-center">
                     <h1>Some Feature That Us Unique</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -106,29 +111,29 @@
 
             </div>
             <div class="container-fluid text-center">
-                <div class="d-flex flex-wrap justify-content-around">
-                    <div >
+                <div class="d-flex flex-wrap justify-content-around numbers">
+                    <div class="rect">
                         <h1>2345</h1>
                         <p>Happy Client</p>
                     </div>
 
-                    <div>
+                    <div class="rect">
                         <h1>6784</h1>
                         <p>Happy Client</p>
                     </div>
 
-                    <div>
+                    <div class="rect">
                         <h1>1056</h1>
                         <p>Tickets Submitted</p>
                     </div>
 
-                    <div>
+                    <div class="rect">
                         <h1>9152</h1>
                         <p>Total Project</p>
                     </div>
                 </div>
             </div>
-            <div class="text-center">
+            <div class="text-center purchase">
                 <h1>
                     Purchase Whatever You Want
                 </h1>
@@ -137,49 +142,49 @@
             <div class="cards d-flex justify-content-around flex-wrap">
                 <div class="d-flex flex-row flex-wrap justify-content-center">
                     <div class="card d-flex flex-column align-items-center">
-                        <div class="card-body">
+                        <div class="card-body d-flex flex-column align-items-center">
                             <div class="title">
-                                <h5 class="card-title">PDF</h5>
+                                <h5 class="card-title text-center">PDF</h5>
                             </div>
-                        </div>
-                        <p class="card-text">
-                            With supporting text below as a natural lead-in.
-                        </p>
-                        <div class="pricing">
-                            <h1>$77.99</h1>
-                            <a href="#" class="btn btn-dark py-2">Purchase Now</a>
+                            <p class="card-text text-center">
+                                With supporting text below as a natural lead-in.
+                            </p>
+                            <div class="pricing d-flex flex-column align-items-center pb-5">
+                                <h1>$77.99</h1>
+                                <a href="#" class="btn btn-dark py-2">Purchase Now</a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="d-flex flex-row flex-wrap justify-content-center">
                     <div class="card d-flex flex-column align-items-center">
-                        <div class="card-body">
+                        <div class="card-body d-flex flex-column align-items-center">
                             <div class="title">
-                                <h5 class="card-title">PDF</h5>
+                                <h5 class="card-title text-center">PDF</h5>
                             </div>
+                            <p class="card-text text-center">
+                                With supporting text below as a natural lead-in.
+                            </p>
+                            <div class="pricing d-flex flex-column align-items-center pb-5">
+                                <h1>$77.99</h1>
+                                <a href="#" class="btn btn-dark py-2">Purchase Now</a>
                         </div>
-                        <p class="card-text">
-                            With supporting text below as a natural lead-in.
-                        </p>
-                        <div class="pricing">
-                            <h1>$77.99</h1>
-                            <a href="#" class="btn btn-dark py-2">Purchase Now</a>
-                        </div>
+                    </div>
                     </div>
                 </div>
                 <div class="d-flex flex-row flex-wrap justify-content-center">
                     <div class="card d-flex flex-column align-items-center">
-                        <div class="card-body">
+                        <div class="card-body d-flex flex-column align-items-center">
                             <div class="title">
-                                <h5 class="card-title">PDF</h5>
+                                <h5 class="card-title text-center">PDF</h5>
                             </div>
-                        </div>
-                        <p class="card-text">
-                            With supporting text below as a natural lead-in.
-                        </p>
-                        <div class="pricing">
-                            <h1>$77.99</h1>
-                            <a href="#" class="btn btn-dark py-2">Purchase Now</a>
+                            <p class="card-text text-center">
+                                With supporting text below as a natural lead-in.
+                            </p>
+                            <div class="pricing d-flex flex-column align-items-center pb-5">
+                                <h1>$77.99</h1>
+                                <a href="#" class="btn btn-dark py-2">Purchase Now</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -221,22 +226,24 @@
                 <h1>What our Reader's say about us</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>   
             </div>
-            <div class="row">
+            <div class="row team">
                 <div class="col-md-4 col-12 text-center">
                     <div class="card mr-2 d-inline-block shadow-lg">
-                        <div class="card-img-top">
+                        <div class="card-img-top pt-5">
                             <img src="./image/blalock.jpg" class="img-fluid" alt="">
+                            <div class="card-body">
+                                <h3 class="card-title">Blaclock Jolene</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ipsa assumenda quibusdam, veritatis dolore est id,
+                                    vitae voluptas repellendus amet minus harum eligendi! Eum esse impedit fugiat, quo ad excepturi.</p>
+                                    
+                                <a href="#" class="text-secondary text-decoration-none">
+                                    Go somewhere
+                                </a>
+                                <p>CEO at Google</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="card-body">
-                        <h3 class="card-title">Blaclock Jolene</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ipsa assumenda quibusdam, veritatis dolore est id,
-                             vitae voluptas repellendus amet minus harum eligendi! Eum esse impedit fugiat, quo ad excepturi.</p>
-                            
-                        <a href="#" class="text-secondary text-decoration-none">
-                            Go somewhere
-                        </a>
-                        <p>CEO at Google</p>
+                    
+                       
                     </div>
                 </div>
                 <div class="col-md-4 col-12 text-center">
@@ -244,57 +251,60 @@
                         <div class="carousel-inner">
                           <div class="carousel-item active">
                             <div class="card mr-2 d-inline-block shadow-lg">
-                                <div class="card-img-top">
+                                <div class="card-img-top pt-5">
                                     <img src="./image/amiel.jpg" class="img-fluid" alt="">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Amiel Barbara</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ipsa assumenda quibusdam, veritatis dolore est id,
+                                             vitae voluptas repellendus amet minus harum eligendi! Eum esse impedit fugiat, quo ad excepturi.</p>
+                                            
+                                        <a href="#" class="text-secondary text-decoration-none">
+                                            Go somewhere
+                                        </a>
+                                        <p>CEO at Google</p>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="card-body">
-                                <h3 class="card-title">Amiel Barbara</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ipsa assumenda quibusdam, veritatis dolore est id,
-                                     vitae voluptas repellendus amet minus harum eligendi! Eum esse impedit fugiat, quo ad excepturi.</p>
-                                    
-                                <a href="#" class="text-secondary text-decoration-none">
-                                    Go somewhere
-                                </a>
-                                <p>CEO at Google</p>
-                            </div>
+                            
                           </div>
                           <div class="carousel-item">
                             <div class="card mr-2 d-inline-block shadow-lg">
-                                <div class="card-img-top">
+                                <div class="card-img-top pt-5">
                                     <img src="./image/allen.jpg" class="img-fluid" alt="">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Allen Agnes</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ipsa assumenda quibusdam, veritatis dolore est id,
+                                             vitae voluptas repellendus amet minus harum eligendi! Eum esse impedit fugiat, quo ad excepturi.</p>
+                                            
+                                        <a href="#" class="text-secondary text-decoration-none">
+                                            Go somewhere
+                                        </a>
+                                        <p>CEO at Google</p>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="card-body">
-                                <h3 class="card-title">Allen Agnes</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ipsa assumenda quibusdam, veritatis dolore est id,
-                                     vitae voluptas repellendus amet minus harum eligendi! Eum esse impedit fugiat, quo ad excepturi.</p>
-                                    
-                                <a href="#" class="text-secondary text-decoration-none">
-                                    Go somewhere
-                                </a>
-                                <p>CEO at Google</p>
-                            </div>
+                            
                           </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 col-12 text-center">
                     <div class="card mr-2 d-inline-block shadow-lg">
-                        <div class="card-img-top">
+                        <div class="card-img-top pt-5">
                             <img src="./image/olivia.jpg" class="img-fluid" alt="">
+                            <div class="card-body">
+                                <h3 class="card-title">Olivia Louis</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ipsa assumenda quibusdam, veritatis dolore est id,
+                                     vitae voluptas repellendus amet minus harum eligendi! Eum esse impedit fugiat, quo ad excepturi.</p>
+                                    
+                                <a href="#" class="text-secondary text-decoration-none">
+                                    Go somewhere
+                                </a>
+                                <p>CEO at Google</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="card-body">
-                        <h3 class="card-title">Olivia Louis</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ipsa assumenda quibusdam, veritatis dolore est id,
-                             vitae voluptas repellendus amet minus harum eligendi! Eum esse impedit fugiat, quo ad excepturi.</p>
-                            
-                        <a href="#" class="text-secondary text-decoration-none">
-                            Go somewhere
-                        </a>
-                        <p>CEO at Google</p>
-                    </div>
+                    
                 </div>
             </div>
         </section>
@@ -303,13 +313,13 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-5 col-sm-5">
-                    <h4>About us</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium doloribus a itaque vero atque. Eveniet accusantium quasi repellendus.</p>
-                    <p>Copyright Ⓒ2019 All rights reserved | This template is made with by Daily Tuition</p>
+                    <h4 class="text-light">About us</h4>
+                    <p class="text-muted">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium doloribus a itaque vero atque. Eveniet accusantium quasi repellendus.</p>
+                    <p class="text-muted">Copyright Ⓒ2019 All rights reserved | This template is made with by <span>Daily Tuition</span></p>
                 </div>
                 <div class="col-md-5 col-sm-12">
-                    <h4>Newsletter</h4>
-                    <p>Stay Updated</p>
+                    <h4 class="text-light">Newsletter</h4>
+                    <p class="text-muted">Stay Updated</p>
                     <form action="" class="form-inline">
                         <div class="pl-0">
                             <div class="input-group">
@@ -327,7 +337,7 @@
                     <h4 class="text-light">
                         Follow Us
                     </h4>
-                    <p>Let us be social</p>
+                    <p class="text-muted">Let us be social</p>
                     <div class="text-light">
                         <i class="fab fa-facebook-f"></i>
                         <i class="fab fa-instagram"></i>
